@@ -6,3 +6,5 @@
 
   were './users' is a duck
 */
+
+export { useItems } from "../ducks"
