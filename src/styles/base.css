@@ -9,15 +9,118 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 400px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: royalblue;
+}
+
+.container {
+  position: absolute;
+  left: 25%;
+  top: 10%;
+  background-color: rgb(242, 242, 242);
+  width: 600px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counters {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+}
+
+.threebuttons {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+}
+
+.listandmore {
+  background-color: white;
+  width: 400px;
+  box-shadow:
+  /* The top layer shadow */ 0 1px 1px rgba(0, 0, 0, 0.15),
+    /* The second layer */ 0 10px 0 -5px #eee,
+    /* The second layer shadow */ 0 10px 1px -4px rgba(0, 0, 0, 0.15),
+    /* The third layer */ 0 20px 0 -10px #eee,
+    /* The third layer shadow */ 0 20px 1px -9px rgba(0, 0, 0, 0.15);
+  /* Padding for demo purposes */
+  padding: 30px;
+}
+
+.todolist {
+  /* background-color: white;
+  width: 400px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #eee,
+    0 10px 1px -4px rgba(0, 0, 0, 0.15), 0 20px 0 -10px #eee,
+    0 20px 1px -9px rgba(0, 0, 0, 0.15);
+
+  padding: 30px; */
+}
+
+.listitem {
+  width: 400px;
+}
+
+h1 {
+  color: rgb(231, 212, 213);
+  font-family: "Cormorant Garamond";
+  font-size: 50px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+li {
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+input {
+  height: 40px;
+  width: 400px;
+  outline: none;
+}
+
+.submit {
+  height: 40px;
+  border: 1px solid;
+  border-radius: 20%;
+  outline: none;
+}
+
+#all,
+#active,
+#completed {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.all,
+.completed,
+.active {
+  display: inline-block;
+  background-color: white;
+  padding: 10px 20px;
+  font-family: sans-serif, Arial;
+  font-size: 16px;
+  border: 2px solid rgb(231, 212, 213);
+  border-radius: 4px;
+  width: 100px;
+  text-align: center;
+  font-size: small;
+  color: rgb(231, 212, 213);
 }
