@@ -43,7 +43,10 @@ export default props => {
               listitem
               onClick={e => toggle(todo.id)}
             >
-              {todo.text} <button onClick={e => del(todo.id)}>X</button>
+              {todo.text}{" "}
+              <button className="xbutton" onClick={e => del(todo.id)}>
+                X
+              </button>
             </li>
           ))}
         </ul>
